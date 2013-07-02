@@ -137,21 +137,21 @@ Operators:
 	-
 \**--------------------------------------------------------------------------**/
 
-#include "..\YSI-Internal\y_version"
+#include "..\YSI_Internal\y_version"
 
-#include "..\YSI-Data\y_bit"
-#include "..\YSI-Data\y_playerarray"
+#include "..\YSI_Data\y_bit"
+#include "..\YSI_Data\y_playerarray"
 
-#include "..\YSI-Data\y_iterate"
-#include "..\YSI-Core\y_debug"
+#include "..\YSI_Data\y_iterate"
+#include "..\YSI_Core\y_debug"
 
-#include "..\YSI-Coding\y_inline"
-#include "..\YSI-Coding\y_remote"
+#include "..\YSI_Coding\y_inline"
+#include "..\YSI_Coding\y_remote"
 
 #if defined AREAS_USE_TIMER
-	#include "..\YSI-Coding\y_timers"
+	#include "..\YSI_Coding\y_timers"
 #endif
-#include "..\YSI-Internal\y_natives"
+#include "..\YSI_Internal\y_natives"
 
 #if !defined MAX_AREAS
 	#define MAX_AREAS (1024)
@@ -161,13 +161,13 @@ Operators:
 #endif
 
 #define YSIM_U_DISABLE
-#include "..\YSI-Core\y_master"
+#include "..\YSI_Core\y_master"
 
 #define _GROUP_MAKE_NAME<%0...%1> %0Area%1
 #define _GROUP_MAKE_LIMIT         MAX_AREAS
-#include "..\YSI-Players\y_groups\_funcs"
+#include "..\YSI_Players\y_groups\_funcs"
 
-#include "..\YSI-Coding\y_hooks"
+#include "..\YSI_Coding\y_hooks"
 
 stock _YSI_HAS_y_areas(_do_not_call_me_ever_, _like_never_)
 {
