@@ -164,16 +164,16 @@ Optional plugins:
 	#tryinclude "y_areas\y_areas_entry"
 #endif
 #if !defined _INC_y_areas
-	#tryinclude "YSI_Visual\y_areas\y_areas_entry"
+	#tryinclude "YSI-Visual\y_areas\y_areas_entry"
 #endif
 #if !defined _INC_y_areas
-	#tryinclude "YSI\YSI_Visual\y_areas\y_areas_entry"
+	#tryinclude "YSI\YSI-Visual\y_areas\y_areas_entry"
 #endif
 #if !defined _INC_y_areas
-	#tryinclude <YSI_Visual\y_areas\y_areas_entry>
+	#tryinclude <YSI-Visual\y_areas\y_areas_entry>
 #endif
 #if !defined _INC_y_areas
-	#tryinclude <YSI\YSI_Visual\y_areas\y_areas_entry>
+	#tryinclude <YSI\YSI-Visual\y_areas\y_areas_entry>
 #endif
 #if !defined _INC_y_areas
 	#error Could not find y_areas
